@@ -1,6 +1,6 @@
 ## 08编译出合适自己的nginx
 ---
-## 下载 `nginx` [nginx下载地址](http://nginx.org/en/download.html)
+下载 `nginx` [下载地址](http://nginx.org/en/download.html)
 ```
 [root@localhost download]# wget http://nginx.org/download/nginx-1.14.2.tar.gz
 --2019-04-02 14:28:52--  http://nginx.org/download/nginx-1.14.2.tar.gz
@@ -18,7 +18,7 @@ Saving to: ‘nginx-1.14.2.tar.gz’
 
 2019-04-02 14:28:53 (2.32 MB/s) - ‘nginx-1.14.2.tar.gz’ saved [1015384/1015384]
 ```
-## 解压
+解压
 ```
 [root@localhost download]# tar -xzf nginx-1.14.2.tar.gz 
 [root@localhost download]# cd nginx-1.14.2
@@ -36,7 +36,7 @@ drwxr-xr-x. 2 1001 1001     20 Apr  2 14:29 man
 -rw-r--r--. 1 1001 1001     49 Dec  4 09:52 README
 drwxr-xr-x. 9 1001 1001     84 Apr  2 14:29 src
 ```
-## 查看conf/nginx.conf (执行 cp -r contrib/vim/* ~/.vim/ 会将nginx配置语法区分颜色显示)
+查看conf/nginx.conf (执行 cp -r contrib/vim/* ~/.vim/ 会将nginx配置语法区分颜色显示)
 ```
 [root@localhost nginx-1.14.2]# cp -r contrib/vim/* ~/.vim/
 cp: target ‘/root/.vim/’ is not a directory
@@ -44,7 +44,7 @@ cp: target ‘/root/.vim/’ is not a directory
 [root@localhost nginx]# mkdir ~/.vim/
 [root@localhost nginx]# cp -r contrib/vim/* ~/.vim/
 ```
-## html 目录
+html 目录
 ```
 [root@localhost nginx]# cd html
 [root@localhost html]# ll
@@ -74,7 +74,7 @@ the <a href="http://nginx.org/r/error_log">error log</a> for details.</p>
 </body>
 </html>
 ```
-## 源码
+源码
 ```
 [root@localhost html]# cd ../src
 [root@localhost src]# ll
@@ -87,7 +87,7 @@ drwxr-xr-x. 2 1001 1001   72 Apr  2 14:29 misc
 drwxr-xr-x. 3 1001 1001   17 Apr  2 14:29 os
 drwxr-xr-x. 2 1001 1001 4096 Dec  4 09:52 stream
 ```
-## 编译
+编译
 ```
 [root@localhost nginx]# ./configure --help
 
